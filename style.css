@@ -119,8 +119,45 @@ welcome
     color: var(--white);
 }
 .welcome p {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     color: var(--lightGray);
     line-height: 1.8;
     padding: 40px 0;
+}
+/**********************
+whoWeAre
+**********************/
+.whoWeAre article {
+    display: flex;
+    align-items: center;
+}
+.whoWeAre article .img {
+    flex: 0 0 30%;
+    line-height: 0;
+}
+.whoWeAre article img {
+    width: 100%;
+}
+.whoWeAre article .text {
+    flex: 0 0 70%;
+    color: var(--white);
+    padding: 4%;
+}
+.whoWeAre article:nth-child(1) {
+    background-color: var(--firstBg);
+}
+.whoWeAre article:nth-child(2) {
+    background-color: var(--secondBg);
+}
+.whoWeAre article:nth-child(3) {
+    background-color: var(--thirdBg);
+}
+.whoWeAre h3 {
+    font-size: 2.6rem;
+}
+.whoWeAre p {
+    font-size: 1.3rem;
+    color: var(--lightGray);
+    line-height: 1.6;
+    padding: 30px 0;
 }
