@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow:400,700,900|Lato:300,400,700&display=swap');
+:root {
+    --primaryViolet: #5e42a6;
+    --navColor: #312450;
+    --firstBg: #5052b5;
+    --secondBg: #4c4eac;
+    --thirdBg: #484aa3;
+    --fourthBg: #b74e91;
+    --fifthBg: #5e42a6;
+    --footerBg: #493382;
+    --white: #fff;
+    --border: #765eb3;
+    --lightGray: rgba(211, 211, 211,.7);
+    --borderLightGray: rgba(211, 211, 211,.3);
+    --transition: .2s ease;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.5;
+    font-size: 16px;
+}
+h1,h2,h3, h4 {
+    font-family: 'Barlow', sans-serif;
+}
+a {
+    text-decoration: none;
+    transition: var(--transition);
+}
+ul {
+    list-style: none;
+}
