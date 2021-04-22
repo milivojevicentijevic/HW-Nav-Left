@@ -6,7 +6,7 @@
     --secondBg: #4c4eac;
     --thirdBg: #484aa3;
     --fourthBg: #b74e91;
-    --fifthBg: #5e42a6;
+    --fifthBg: #5342a6; /* rgb(83, 66, 166) */
     --footerBg: #493382;
     --white: #fff;
     --border: #765eb3;
@@ -33,6 +33,26 @@ a {
 }
 ul {
     list-style: none;
+}
+.container {
+    width: 90%;
+    margin: auto;
+}
+button {
+    text-transform: uppercase;
+    padding: 26px 52px;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: transparent;
+    color: var(--white);
+    border: 1px solid var(--border);
+    font-size: 1.1rem;
+    letter-spacing: 3px;
+    transition: var(--transition);
+}
+button:hover {
+    border-color: var(--primaryViolet);
+    background-color: rgba(255,255,255,.3);
 }
 /**********************
 aside
@@ -76,6 +96,31 @@ aside div a {
 aside div a:hover {
     color: var(--fourthBg);
 }
-section {
-    margin-left: 26%;
+/**********************
+main
+**********************/
+main {
+    margin-left: 25%;
+}
+/**********************
+welcome
+**********************/
+.welcome {
+    height: 100vh;
+    background: linear-gradient(rgba(83, 66, 166,.9),rgba(83, 66, 166,.9)), url(img/circle.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;;
+}
+.welcome h1 {
+    font-size: 5.8rem;
+    color: var(--white);
+}
+.welcome p {
+    font-size: 1.4rem;
+    color: var(--lightGray);
+    line-height: 1.8;
+    padding: 40px 0;
 }
