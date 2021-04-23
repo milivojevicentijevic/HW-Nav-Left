@@ -291,4 +291,14 @@ getInTouch
     font-size: 1.3rem;
     padding: 10px 0;
 }
+/**********************
+footer
+**********************/
+footer {
+    background-color: var(--thirdBg);
+    padding: 35px;
+    text-align: center; 
+    font-size: 1.3rem;
+}
+
 
