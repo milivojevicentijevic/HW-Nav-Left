@@ -7,7 +7,7 @@
     --thirdBg: #484aa3;
     --fourthBg: #b74e91;
     --fifthBg: #5342a6; /* rgb(83, 66, 166) */
-    --footerBg: #493382;
+    --footerBg: #493382; /* rgb(73, 51, 130) */
     --white: #fff;
     --border: #765eb3;
     --lightGray: rgba(211, 211, 211,.7);
@@ -23,9 +23,13 @@ body {
     font-family: 'Lato', sans-serif;
     line-height: 1.5;
     font-size: 16px;
+    color: var(--white);  
 }
 h1,h2,h3, h4 {
     font-family: 'Barlow', sans-serif;
+}
+p {
+    color: var(--lightGray);
 }
 a {
     text-decoration: none;
@@ -119,11 +123,9 @@ welcome
 }
 .welcome h1 {
     font-size: 5.8rem;
-    color: var(--white);
 }
 .welcome p {
     font-size: 1.6rem;
-    color: var(--lightGray);
     line-height: 1.8;
     padding: 40px 0;
 }
@@ -143,7 +145,6 @@ whoWeAre
 }
 .whoWeAre article .text {
     flex: 0 0 70%;
-    color: var(--white);
     padding: 4%;
 }
 .whoWeAre article:nth-child(1) {
@@ -160,7 +161,6 @@ whoWeAre
 }
 .whoWeAre p {
     font-size: 1.3rem;
-    color: var(--lightGray);
     line-height: 1.6;
     padding: 30px 0;
 }
@@ -169,7 +169,6 @@ whatWeDo
 **********************/
 .whatWeDo {
     background-color: var(--fourthBg);
-    color: var(--white);
 }
 .whatWeDo h2 {
     font-size: 3.2rem;
@@ -177,7 +176,6 @@ whatWeDo
 }
 .whatWeDo article > p {
     font-size: 1.3rem;
-    color: var(--lightGray);
     line-height: 1.6;
     padding: 30px 0;
 }
@@ -185,10 +183,10 @@ whatWeDo
     border-collapse: collapse;
     border: 2px solid var(--borderLightGray);
     padding: 60px 25px;
-    background: rgba(255,255,255,.075);
+    background-color: rgba(255,255,255,.075);
 }
 .whatWeDo table {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 .whatWeDo .icon {
     float: left;
@@ -219,10 +217,78 @@ whatWeDo
 }
 .whatWeDo p {
     font-size: 1.3rem;
-    color: var(--lightGray);
     line-height: 1.6;
     padding-top: 5px;
 }
 .whatWeDo button {
     border-color: var(--borderLightGray);
 }
+/**********************
+getInTouch
+**********************/
+.getInTouch {
+    background-color: var(--footerBg);
+}
+.getInTouch h2 {
+    font-size: 3.2rem;
+    line-height: 1;
+}
+.getInTouch article > p {
+    font-size: 1.3rem;
+    line-height: 1.6;
+    padding: 30px 0;
+}
+.getInTouch article:last-child {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.getInTouch form {
+    flex: 0 0 65%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.getInTouch input,
+.getInTouch textarea {
+    color: var(--white);  
+    padding: 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background-color: rgba(255,255,255,.2);
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+.getInTouch input {
+    flex: 0 0 48%;
+}
+.getInTouch textarea {
+    font-family: 'Lato', sans-serif;
+    flex: 0 0 100%;
+}
+.getInTouch input::placeholder,
+.getInTouch textarea::placeholder {
+    color: var(--lightGray);
+}
+.getInTouch .contact {
+    flex: 0 0 33%;
+    border-left: 1px solid var(--borderLightGray);
+    padding-left: 25px;
+}
+.getInTouch dt {
+    color: var(--white);
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding: 20px 0;
+}
+.getInTouch dt:first-child {
+    padding-top: 0;
+}
+.getInTouch dd {
+    color: var(--lightGray);
+    font-size: 1.3rem;
+    padding: 10px 0;
+}
+
