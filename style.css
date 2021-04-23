@@ -38,6 +38,9 @@ ul {
     width: 90%;
     margin: auto;
 }
+.py {
+    padding: 80px 0;
+}
 button {
     text-transform: uppercase;
     padding: 26px 52px;
@@ -160,4 +163,66 @@ whoWeAre
     color: var(--lightGray);
     line-height: 1.6;
     padding: 30px 0;
+}
+/**********************
+whatWeDo
+**********************/
+.whatWeDo {
+    background-color: var(--fourthBg);
+    color: var(--white);
+}
+.whatWeDo h2 {
+    font-size: 3.2rem;
+    line-height: 1;
+}
+.whatWeDo article > p {
+    font-size: 1.3rem;
+    color: var(--lightGray);
+    line-height: 1.6;
+    padding: 30px 0;
+}
+.whatWeDo table, td {
+    border-collapse: collapse;
+    border: 2px solid var(--borderLightGray);
+    padding: 60px 25px;
+    background: rgba(255,255,255,.075);
+}
+.whatWeDo table {
+    margin-bottom: 30px;
+}
+.whatWeDo .icon {
+    float: left;
+    width: 20%;
+    margin-top: 8px;
+}
+.whatWeDo .i {
+    width: 56px;
+    height: 56px;
+    border: 1px solid var(--lightGray);
+    border-radius: 50%;
+    line-height: 72px;
+    text-align: center;
+    background-color: var(--white);
+    margin: auto;
+}
+.whatWeDo i {
+    font-size: 2.45rem;
+    color: var(--fourthBg);
+}
+.whatWeDo .text {
+    float: right;
+    width: 80%;
+    padding-right: 3.5%;
+}
+.whatWeDo h4 {
+    font-size: 1.4rem;
+}
+.whatWeDo p {
+    font-size: 1.3rem;
+    color: var(--lightGray);
+    line-height: 1.6;
+    padding-top: 5px;
+}
+.whatWeDo button {
+    border-color: var(--borderLightGray);
 }
