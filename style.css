@@ -14,6 +14,9 @@
     --borderLightGray: rgba(211, 211, 211,.3);
     --transition: .3s ease;
 }
+/**********************
+general styles
+**********************/
 * {
     box-sizing: border-box;
     margin: 0;
@@ -119,7 +122,7 @@ welcome
     background-size: cover;
     display: flex;
     justify-content: center;
-    align-items: center;;
+    align-items: center;
 }
 .welcome h1 {
     font-size: 5.8rem;
@@ -301,4 +304,133 @@ footer {
     font-size: 1.3rem;
 }
 
-
+/**********************
+RESPONSIVE
+**********************/
+@media (max-width: 768px) {
+    /*** general ***/
+    button {
+        padding: 22px 45px; 
+        letter-spacing: 2px;
+        font-size: 1.05rem;
+    }
+    .py {
+        padding: 60px 0;
+    }
+    /*** aside ***/
+    aside {
+        height: 90vh;
+        width: 100%;
+        position: static;
+        padding: 20px;
+    }
+    aside img {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    aside ul li {
+        padding-bottom: 25px;
+    }
+    /*** main ***/
+    main {
+        margin-left: 0;
+    }
+    /*** welcome ***/
+    .welcome {
+        height: auto;
+        padding: 60px 0;
+    }
+    .welcome h1 {
+        font-size: 3rem;
+        line-height: 1;
+    }
+    .welcome p {
+        font-size: 1.4rem;
+        line-height: 1.5;
+        padding: 30px 0;
+    }
+    /*** whoWeAre ***/
+    .whoWeAre article {
+        flex-direction: column;
+    }
+    .whoWeAre article .text {
+        text-align: center;
+    }
+    .whoWeAre h3 {
+        font-size: 2rem;
+    }
+    .whoWeAre p {
+        font-size: 1.2rem;
+        padding: 20px 0;
+    }
+    .whoWeAre button {
+        margin-bottom: 40px;
+    }
+    /*** whatWeDo ***/
+    .whatWeDo {
+        text-align: center;
+    }
+    .whatWeDo h2 {
+        font-size: 2.4rem;
+    }
+    .whatWeDo article > p {
+        font-size: 1.2rem;
+    }
+    .whatWeDo td {
+        display: block;
+        padding: 0;
+    }
+    .whatWeDo .icon,
+    .whatWeDo .text {
+        float: none;
+        width: 100%;
+    }
+    .whatWeDo .icon{
+        padding-top: 20px;
+    }
+    .whatWeDo .text {
+        padding: 20px 10px;
+    }
+    .whatWeDo p {
+        font-size: 1.2rem;
+    }
+    /*** getInTouch ***/
+    .getInTouch {
+        text-align: center;
+    }
+    .getInTouch h2 {
+        font-size: 2.4rem;
+    }
+    .getInTouch article > p {
+        font-size: 1.2rem;
+    }
+    .getInTouch form {
+        flex: 0 0 100%;
+    }
+    .getInTouch input {
+        flex: 0 0 100%;
+    }
+    .getInTouch input,
+    .getInTouch textarea {  
+    padding: 15px;
+    font-size: 1.1rem;
+    }
+    .getInTouch button {
+        margin: 0 auto 30px;
+    }
+    .getInTouch .contact {
+        flex: 0 0 100%;
+        border-top: 1px solid var(--borderLightGray);
+        border-left: none;
+        padding-left: 0;
+        padding-top: 30px;
+    }
+    .getInTouch dt {
+        font-size: 1.3rem;
+        padding: 20px 0 10px;
+    }
+    .getInTouch dd {
+        font-size: 1.2rem;
+        padding: 5px 0;
+    }
+}
