@@ -307,29 +307,29 @@ footer {
 /**********************
 RESPONSIVE
 **********************/
-@media (max-width: 768px) {
-    /*** general ***/
-    button {
-        padding: 22px 45px; 
-        letter-spacing: 2px;
-        font-size: 1.05rem;
-    }
+
+/* max-width 1440px */
+@media (max-width: 1440px) {
+    /*** general ***/   
     .py {
         padding: 60px 0;
     }
+    p {
+        line-height: 1.5;
+    }
     /*** aside ***/
     aside {
-        height: 90vh;
+        height: 80vh;
         width: 100%;
         position: static;
-        padding: 20px;
+        padding: 40px;
+        text-align: center;
     }
     aside img {
-        width: 80%;
-        margin-bottom: 20px;
+        width: 40%;
     }
-    aside ul li {
-        padding-bottom: 25px;
+    aside ul li a {
+        font-size: 1.6rem;
     }
     /*** main ***/
     main {
@@ -339,29 +339,30 @@ RESPONSIVE
     .welcome {
         height: auto;
         padding: 60px 0;
+        text-align: center;
     }
     .welcome h1 {
-        font-size: 3rem;
-        line-height: 1;
+        font-size: 4rem;
     }
     .welcome p {
-        font-size: 1.4rem;
-        line-height: 1.5;
-        padding: 30px 0;
+        font-size: 1.7rem;
     }
     /*** whoWeAre ***/
     .whoWeAre article {
         flex-direction: column;
+        text-align: center;
+    }
+    .whoWeAre article img {
+        width: 70%;
     }
     .whoWeAre article .text {
         text-align: center;
     }
     .whoWeAre h3 {
-        font-size: 2rem;
+        font-size: 2.4rem;
     }
     .whoWeAre p {
-        font-size: 1.2rem;
-        padding: 20px 0;
+        font-size: 1.4rem;
     }
     .whoWeAre button {
         margin-bottom: 40px;
@@ -371,10 +372,13 @@ RESPONSIVE
         text-align: center;
     }
     .whatWeDo h2 {
-        font-size: 2.4rem;
+        font-size: 2.6rem;
     }
     .whatWeDo article > p {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
+    }
+    .whatWeDo table {
+        width: 100%;
     }
     .whatWeDo td {
         display: block;
@@ -392,28 +396,25 @@ RESPONSIVE
         padding: 20px 10px;
     }
     .whatWeDo p {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
     /*** getInTouch ***/
     .getInTouch {
         text-align: center;
     }
     .getInTouch h2 {
-        font-size: 2.4rem;
+        font-size: 2.6rem;
     }
     .getInTouch article > p {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
     .getInTouch form {
         flex: 0 0 100%;
     }
-    .getInTouch input {
-        flex: 0 0 100%;
-    }
     .getInTouch input,
     .getInTouch textarea {  
-    padding: 15px;
-    font-size: 1.1rem;
+        padding: 15px;
+        font-size: 1.1rem;
     }
     .getInTouch button {
         margin: 0 auto 30px;
@@ -432,5 +433,67 @@ RESPONSIVE
     .getInTouch dd {
         font-size: 1.2rem;
         padding: 5px 0;
+    }
+}
+/* max-width 768px */
+@media (max-width: 768px) {
+    /*** general ***/
+    button {
+        padding: 22px 45px; 
+        letter-spacing: 2px;
+        font-size: 1.05rem;
+    }
+    /*** aside ***/
+    aside {
+        padding: 20px;
+    }
+    aside img {
+        width: 65%;
+    }
+    aside ul li {
+        padding-bottom: 25px;
+    }
+    aside ul li a {
+        font-size: 1.4rem;
+    }
+    /*** welcome ***/
+    .welcome h1 {
+        font-size: 3rem;
+        line-height: 1;
+    }
+    .welcome p {
+        font-size: 1.4rem;
+        padding: 30px 0;
+    }
+    /*** whoWeAre ***/
+    .whoWeAre article img {
+        width: 100%;
+    }
+    .whoWeAre h3 {
+        font-size: 2rem;
+    }
+    .whoWeAre p {
+        font-size: 1.2rem;
+        padding: 20px 0;
+    }
+    /*** whatWeDo ***/
+    .whatWeDo h2 {
+        font-size: 2.4rem;
+    }
+    .whatWeDo article > p {
+        font-size: 1.2rem;
+    }
+    .whatWeDo p {
+        font-size: 1.2rem;
+    }
+    /*** getInTouch ***/
+    .getInTouch input {
+        flex: 0 0 100%;
+    }
+    .getInTouch h2 {
+        font-size: 2.4rem;
+    }
+    .getInTouch article > p {
+        font-size: 1.2rem;
     }
 }
